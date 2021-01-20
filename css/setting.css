@@ -1,0 +1,71 @@
+:root {
+    --primary-color: #ff817e;
+    --gray-dark: #263a41;
+    --gray-light: #888;
+    --white: white;
+    --black: black;
+    --bg-block: #fff9f8;
+    --primary-font: "Roboto";
+    --secondary-font: "Rufina";
+    --wrapper: 192rem;
+    --container: 117rem;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    color: var(--gray-dark);
+    background-color: var(--white);
+}
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+body.fixedBody{
+    position: fixed;
+}
+.wrapper {
+    max-width: var(--wrapper);
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    max-width: var(--container);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn{
+    padding : 1.5rem 3rem;
+    border:none;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    color:var(--white);
+}
+.btn--primary{
+    background-color: var(--primary-color);
+}
+.btn--rounder{
+    border-radius: 10rem;
+}
+.btn--icon i{
+    margin-left: 1rem;
+    display: inline-block;
+    color: inherit;
+}
